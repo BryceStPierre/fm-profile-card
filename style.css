@@ -4,15 +4,20 @@
   box-sizing: border-box;
 }
 
-html {
+html, body {
+  height: 100vh;
+  height: -moz-available;
   height: -webkit-fill-available;
+  height: fill-available;
+}
+
+html {
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
   font-size: 1rem;
 }
 
 body {
-  height: -webkit-fill-available;
   background-color: var(--cyan);
   background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
   background-size: 100vw, 150vw;
@@ -121,10 +126,6 @@ body {
 }
 
 @media only screen and (min-width: 1440px) {
-  html, body {
-    min-height: 100vh;
-  }
-
   body {
     background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
     background-size: 70vw, 70vw;
