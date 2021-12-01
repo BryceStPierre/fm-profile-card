@@ -8,17 +8,17 @@ html {
   height: -webkit-fill-available;
   font-family: "Kumbh Sans", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 body {
   height: -webkit-fill-available;
   background-color: var(--cyan);
-  background-image: url(./images/bg-pattern-top.svg);
-  /* background-size: auto, auto;
-  background-repeat: no-repeat; */
-  background-position: -100px -100px;
-  padding: 25px;
+  background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+  background-size: 100vw, 150vw;
+  background-repeat: no-repeat, no-repeat;
+  background-position: -45vw -50vw, 45vw 100vw;
+  padding: 0 25px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -42,32 +42,34 @@ body {
 
 .card__header {
   width: 100%;
-  height: auto;
+  height: 140px;
+  background-image: url(./images/bg-pattern-card.svg);
+
 }
 
 .card__avatar {
+  box-sizing: content-box;
   border: 5px solid #fff;
   border-radius: 50%;
-  margin: -60px auto 15px;
-  box-sizing: content-box;
+  margin: -56px auto 20px;
 }
 
 .card__name {
-  font-size: 1rem;
+  font-size: 1.15rem;
   margin: 0;
 }
 
 .card__age {
   font-weight: 400;
   color: var(--dark-gray);
-  padding-left: 5px;
+  padding-left: 0.4rem;
 }
 
 .card__location {
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 1;
   color: var(--dark-gray);
-  margin-bottom: 20px;
+  margin: 10px 0 20px;
 }
 
 .card__divider {
@@ -90,16 +92,16 @@ body {
 
 .stats__heading {
   margin: 0;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 .stats__subheading {
   margin-top: 4px;
   display: block;
-  font-size: 0.55rem;
+  font-size: 0.6rem;
   font-weight: 400;
-  text-indent: 2px;
-  letter-spacing: 2px;
+  text-indent: 0.1rem;
+  letter-spacing: 0.1rem;
   color: var(--dark-gray);
 }
 
@@ -112,7 +114,25 @@ body {
   bottom: 0;
   left: 0;
 }
+
 .attribution a {
   font-weight: 700;
   color: #fff;
+}
+
+@media only screen and (min-width: 1440px) {
+  html, body {
+    min-height: 100vh;
+  }
+
+  body {
+    background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
+    background-size: 70vw, 70vw;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -22vw -37vw, 160% 26vw;
+  }
+
+  .card {
+    width: 350px;
+  }
 }

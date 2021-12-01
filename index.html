@@ -1,76 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Frontend Mentor | Profile card component</title>
-  </head>
 
-  <body>
-    <main class="card">
-      <img
-        class="card__header"
-        src="./images/bg-pattern-card.svg"
-        width="350"
-        height="140"
-      />
-      <img
-        class="card__avatar"
-        src="./images/image-victor.jpg"
-        width="96"
-        height="96"
-        alt="Victor Crest"
-      />
-      <h1 class="card__name">Victor Crest <span class="card__age">26</span></h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Frontend Mentor | Profile card component</title>
+</head>
 
-      <p class="card__location">London</p>
-      <hr class="card__divider">
-      <ul class="stats">
-        <li class="stats__item">
-          <h2 class="stats__heading">
-            80K <span class="stats__subheading">Followers</span>
-          </h2>
-        </li>
-        <li class="stats__item">
-          <h2 class="stats__heading">
-            803K <span class="stats__subheading">Likes</span>
-          </h2>
-        </li>
-        <li class="stats__item">
-          <h2 class="stats__heading">
-            1.4K <span class="stats__subheading">Photos</span>
-          </h2>
-        </li>
-      </ul>
-    </main>
-    <footer class="attribution">
-      Challenge by
-      <a
-        href="https://www.frontendmentor.io?ref=challenge"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Frontend Mentor</a
-      >. Coded by
-      <a
-        href="https://github.com/BryceStPierre"
-        target="_blank"
-        rel="noopener noreferrer"
-        >Bryce St. Pierre</a
-      >.
-    </footer>
-  </body>
+<body>
+  <main class="card">
+    <div class="card__header"></div>
+    <img class="card__avatar" src="./images/image-victor.jpg" width="96" height="96" alt="Victor Crest" />
+    <h1 class="card__name">Victor Crest <span class="card__age">26</span></h1>
+    <p class="card__location">London</p>
+    <hr class="card__divider">
+    <ul class="stats">
+      <li class="stats__item">
+        <h2 class="stats__heading">
+          80K <span class="stats__subheading">Followers</span>
+        </h2>
+      </li>
+      <li class="stats__item">
+        <h2 class="stats__heading">
+          803K <span class="stats__subheading">Likes</span>
+        </h2>
+      </li>
+      <li class="stats__item">
+        <h2 class="stats__heading">
+          1.4K <span class="stats__subheading">Photos</span>
+        </h2>
+      </li>
+    </ul>
+  </main>
+  <footer class="attribution">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener noreferrer">Frontend Mentor</a>.
+    Coded by
+    <a href="https://github.com/BryceStPierre" target="_blank" rel="noopener noreferrer">Bryce St. Pierre</a>.
+  </footer>
+</body>
+
 </html>
